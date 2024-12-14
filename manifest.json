@@ -1,0 +1,11 @@
+{
+    "name": "Zip Check",
+    "description": "Zip file Checker",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "zipCheck.html",
+      "default_icon": "zipIcon.png"
+    }
+  }
+  
