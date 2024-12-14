@@ -16,7 +16,7 @@ chrome.downloads.onDeterminingFilename.addListener((downloadItem) => {
           type: 'basic',
           iconUrl: 'icon.png',
           title: 'Download Scan Result',
-          message: 'The file has flags in the scan. Do you want to continue downloading?',
+          message: `The file has ${numFlags} flags in the scan. Do you want to continue downloading?`,
           priority: 2,
           buttons: [
             { title: 'Yes' },
