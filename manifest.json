@@ -1,0 +1,27 @@
+{
+  "name": "File Download Scanner",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "downloads",
+    "nativeMessaging",
+    "notifications",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
+
