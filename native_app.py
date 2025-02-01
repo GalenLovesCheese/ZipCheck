@@ -8,9 +8,6 @@ import wget
 import shutil
 import zipfile
 import platform
-from dotenv import load_dotenv
-
-load_dotenv()
 
 def send_message(message):
     """Send a message to the Chrome extension."""
@@ -49,7 +46,7 @@ def calculate_file_hash(filepath):
 
 def scan_file_with_virustotal(file_hash):
     """Send the file hash to VirusTotal and get the scan report."""
-    VIRUSTOTAL_API_KEY = "5cf0f36e4eaa12ad2dcb24b069b30dcf34445264b6a73791dc8058c1d9c9da88"
+    VIRUSTOTAL_API_KEY = "PLACE YOUR VIRUSTOTAL API KEY HERE"
     url = f'https://www.virustotal.com/api/v3/files/{file_hash}'
     headers = {
         'accept': 'application/json',
@@ -81,7 +78,7 @@ def handle_zip_file(filepath):
                 continue
             else:
                 extracted_path = zf.extract(zinfo, extract_point)
-                extracted_files.append((False,extracted_path))
+                extracted_files.append(extracted_path)
 
     return extracted_files
 

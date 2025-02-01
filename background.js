@@ -2,7 +2,7 @@ chrome.downloads.onDeterminingFilename.addListener((downloadItem) => {
   // Pause the download temporarily
   chrome.downloads.pause(downloadItem.id, () => {
     // Connect to the native application
-    var nativePort = chrome.runtime.connectNative("native_messaging_host");
+    var nativePort = chrome.runtime.connectNative('native_messaging_host');
 
     // Send the URL to the native application for download and scanning
     nativePort.postMessage({ action: 'download_and_scan', url: downloadItem.url });
