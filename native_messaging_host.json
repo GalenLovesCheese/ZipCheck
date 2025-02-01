@@ -1,0 +1,10 @@
+{
+  "name": "native_messaging_host",
+  "description": "Python-based file downloader and VirusTotal scanner",
+  "path": "C:\\Users\\lu176\\Documents\\GitHub\\ZipCheck\\native_app.py", 
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://YOUR CHROME EXTENSION ID/"
+  ]
+}
+  
